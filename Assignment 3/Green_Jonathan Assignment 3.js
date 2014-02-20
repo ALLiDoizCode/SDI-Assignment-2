@@ -6,7 +6,7 @@
 //Assignment 3
 
 var geforceCards = ["GTX 750", "GTX 760", "GTX 770", "GTX 780"],
-	pricePerCard = [20, 15, 25, 30],
+	pricePerCard = [, , , ],
 	typeOfConsumer = ["Casual", "Gamer", "Enthusiast"];
 
 
