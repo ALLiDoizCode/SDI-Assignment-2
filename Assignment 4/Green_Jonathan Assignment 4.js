@@ -26,33 +26,33 @@ var checkString = function(phoneNum){
 	}
 };
 
-
+//CHECK EMAIL FUNCTION
 var checkString2 = function(email){
+	start = email.indexOf("@")
+	end = email.indexOf(".")
+	if(start === -1 || start === 0 || end === -1) {	
+		return false;
+	}
 	
-
-
-
-
+	if(start < end & start !== -1 & end !== -1 & start < end-1){
 	
-
-
+	return true;
+	}
 };
 
 
-//CHECK NAME FUNCTION
-var checkname = function(){
-	
-	
-	
-	
-	
-}
+
 
 //main code
-//stringReturn = checkString("843-881-7406");
+stringReturn = checkString("843-881-7406");
 
-//console.log(stringReturn);
+console.log("This number is " + stringReturn);
 
-//stringReturn2 = checkString2("di3twater@gmail.com");
-var email = "di3twater@gmail.com"
-console.log(email.indexOf("com"));
+stringReturn2 = checkString2("di3twater@gmail.com");
+
+console.log("This email is " + stringReturn2);
+
+stringurl = checkUrl("http://");
+
+console.log("This address is " + stringurl);
+
