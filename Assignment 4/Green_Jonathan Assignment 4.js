@@ -52,14 +52,35 @@ var checkUrl = function(url){
 	}else{
 		return false;
 	}
-
-	
-	
 }
 
-//main code
-stringReturn = checkString("843-881-7406");
+//string to number FUNCTIONS
+var numcheck = function(string){
+	var Floor = Math.floor;
+	int = Floor(string)
+	
+	return int;
+}
 
+//ARRAY FUNCTIONS
+//next largest number in an array 
+var arrayCheck = function(ARRAY, Num) {
+   var returnNumber = -1;
+
+   for(var i=0; i < ARRAY.length; i++) {
+       if (ARRAY[i] > Num) {
+           returnNumber = ARRAY[i];
+           break;
+       }
+   }
+
+   return returnNumber;
+}
+
+
+//main code
+// phone num
+stringReturn = checkString("843-881-7406");
 console.log("This number is " + stringReturn);
 
 stringReturn2 = checkString2("di3twater@gmail.com");
@@ -70,3 +91,8 @@ stringurl = checkUrl("http://");
 
 console.log("This address is " + stringurl);
 
+console.log(numcheck("5001.22"));
+
+highNum = arrayCheck([1,8,11,13,15,21],14);
+
+console.log(highNum);
