@@ -41,7 +41,21 @@ var checkString2 = function(email){
 };
 
 
+//CHECK url FUNCTION
+var checkUrl = function(url){
+	start = url.indexOf("h")
+	end = url.lastIndexOf("/")
+	middle = url.indexOf("s")
+	
+	if((start === 0 & end === 6) || (start === 0 & middle === 4 & end === 7 )){
+		return true;
+	}else{
+		return false;
+	}
 
+	
+	
+}
 
 //main code
 stringReturn = checkString("843-881-7406");
