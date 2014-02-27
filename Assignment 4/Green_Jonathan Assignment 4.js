@@ -78,21 +78,40 @@ var arrayCheck = function(ARRAY, Num) {
 }
 
 
+
+// number of decimal places
+var Decimals = function(num, Dec) {
+
+   numValue = num.toFixed(Dec);
+
+   return numValue;
+};
+
+
+
+
+
 //main code
-// phone num
+
+//phone num
 stringReturn = checkString("843-881-7406");
 console.log("This number is " + stringReturn);
 
+//email
 stringReturn2 = checkString2("di3twater@gmail.com");
-
 console.log("This email is " + stringReturn2);
 
+//http
 stringurl = checkUrl("http://");
-
 console.log("This address is " + stringurl);
 
+//string to int
 console.log(numcheck("5001.22"));
 
+//next high Array
 highNum = arrayCheck([1,8,11,13,15,21],14);
-
 console.log(highNum);
+
+//decimal
+numDec = Decimals(52.14236,3);
+console.log(numDec);
