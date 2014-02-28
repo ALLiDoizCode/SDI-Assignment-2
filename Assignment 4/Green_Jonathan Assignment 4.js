@@ -89,7 +89,7 @@ var Decimals = function(num, Dec) {
 //main code
 
 //phone num
-stringReturn = checkString("843-881-7406");
+stringReturn = checkString("853-781-6406");
 console.log("This number is " + stringReturn);
 
 //email
