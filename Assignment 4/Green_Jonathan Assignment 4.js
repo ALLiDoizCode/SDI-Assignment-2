@@ -5,12 +5,7 @@
 //Project 4
 //problem solving fuctions
 
-//global variables
-var stringReturn;
-var stringReturn2;
-var stringReturn3;
-var nameReturn;
-var num = "843-881-7406"
+
 //fuctions
 
 //CHECK STRING FUNCTION
